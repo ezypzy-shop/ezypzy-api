@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import sql from "../../utils/sql";
-import { sendShippingUpdateEmail } from "../../email/route";
-import { sendPushToUser } from "../../notifications/send-push/route";
+import { sendShippingUpdateEmail } from "../../utils/email";
+import { sendPushToUser } from "../../utils/notifications";
 
 export async function GET(
   request: NextRequest,
